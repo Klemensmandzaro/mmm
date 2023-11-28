@@ -10,6 +10,7 @@ void set_cursor(int,int);
 void druk(int,int,int,int);
 
 int a=5, b=5;
+int alfa=0;
 int main() {
     int x=0 , y=4;
     int c;
@@ -54,6 +55,10 @@ int main() {
                 system("cls");
                 druk( a, b ,x, y);
                 break;
+            case '<':
+                alfa-=90;
+            case '>':
+                alfa+=90;
         }
     }
     return 0;
